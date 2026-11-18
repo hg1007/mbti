@@ -1,0 +1,136 @@
+/* ===== Apple Clean Theme (Default) ===== */
+:root, [data-theme="apple"] {
+  --canvas: #f5f5f7;
+  --surface-1: #ffffff;
+  --surface-2: #f5f5f7;
+  --surface-3: #e8e8ed;
+  --hairline: #d2d2d7;
+  --hairline-soft: #e8e8ed;
+
+  --ink: #1d1d1f;
+  --ink-secondary: #424245;
+  --ink-muted: #86868b;
+  --ink-subtle: #6e6e73;
+
+  --accent-blue: #0071e3;
+
+  /* Dimension bar gradients */
+  --dim-ei: linear-gradient(90deg, #7c6cf0, #9b8cff);
+  --dim-sn: linear-gradient(90deg, #34c759, #5dd87a);
+  --dim-tf: linear-gradient(90deg, #0071e3, #409cff);
+  --dim-jp: linear-gradient(90deg, #ff9500, #ffb340);
+
+  /* Gradient accent colors */
+  --gradient-violet: #7c6cf0;
+  --gradient-magenta: #bf5af2;
+  --gradient-orange: #ff9500;
+  --gradient-coral: #ff6482;
+
+  /* Success/Error */
+  --success: #34c759;
+  --error: #ff3b30;
+
+  /* Character colors */
+  --char-line: #7c6cf0;
+  --char-line-light: #a89cff;
+  --char-line-dark: #5a4ed4;
+  --char-skin: #ffd9b8;
+  --char-eye: #3a2f4f;
+  --char-mouth: #c97a6f;
+  --char-body: #d8d1ff;
+  --char-legs: #5a4fcf;
+
+  /* Radii */
+  --rounded-xs: 0.25rem;
+  --rounded-sm: 0.5rem;
+  --rounded-md: 0.75rem;
+  --rounded-lg: 1rem;
+  --rounded-xl: 1.25rem;
+  --rounded-xxl: 1.75rem;
+  --rounded-pill: 980px;
+  --rounded-full: 9999px;
+
+  /* Spacing */
+  --space-hair: 1px;
+  --space-xxs: 0.25rem;
+  --space-xs: 0.5rem;
+  --space-sm: 0.75rem;
+  --space-md: 1rem;
+  --space-lg: 1.25rem;
+  --space-xl: 2rem;
+  --space-xxl: 3rem;
+
+  /* Shadows */
+  --shadow-sm: 0 1px 3px rgba(0,0,0,0.04), 0 1px 2px rgba(0,0,0,0.06);
+  --shadow-md: 0 4px 14px rgba(0,0,0,0.06), 0 2px 6px rgba(0,0,0,0.04);
+  --shadow-lg: 0 10px 30px rgba(0,0,0,0.08), 0 4px 12px rgba(0,0,0,0.04);
+
+  /* Safe Area */
+  --safe-top: env(safe-area-inset-top, 0px);
+  --safe-bottom: env(safe-area-inset-bottom, 0px);
+}
+
+/* ===== Framer Dark Theme ===== */
+[data-theme="framer"] {
+  --canvas: #090909;
+  --surface-1: #141414;
+  --surface-2: #1c1c1c;
+  --surface-3: #242424;
+  --hairline: #262626;
+  --hairline-soft: #1a1a1a;
+
+  --ink: #ffffff;
+  --ink-secondary: #cccccc;
+  --ink-muted: #999999;
+  --ink-subtle: #666666;
+
+  --accent-blue: #0099ff;
+
+  --dim-ei: linear-gradient(90deg, #8b7dff, #a89cff);
+  --dim-sn: linear-gradient(90deg, #d44df0, #e879f9);
+  --dim-tf: linear-gradient(90deg, #ff7a3d, #ffaa5c);
+  --dim-jp: linear-gradient(90deg, #ff5577, #ff8a9e);
+
+  --gradient-violet: #8b7dff;
+  --gradient-magenta: #d44df0;
+  --gradient-orange: #ff7a3d;
+  --gradient-coral: #ff5577;
+
+  --success: #22c55e;
+  --error: #ef4444;
+
+  /* Character colors - brighter for dark mode */
+  --char-line: #8b7dff;
+  --char-line-light: #b8abff;
+  --char-line-dark: #6a5cd4;
+  --char-skin: #ffe0c2;
+  --char-eye: #ffffff;
+  --char-mouth: #ffb8a8;
+  --char-body: #6a5cd4;
+  --char-legs: #8b7dff;
+
+  --rounded-xs: 0.25rem;
+  --rounded-sm: 0.375rem;
+  --rounded-md: 0.625rem;
+  --rounded-lg: 0.9375rem;
+  --rounded-xl: 1.25rem;
+  --rounded-xxl: 1.875rem;
+  --rounded-pill: 100px;
+  --rounded-full: 9999px;
+
+  --space-hair: 1px;
+  --space-xxs: 0.25rem;
+  --space-xs: 0.5rem;
+  --space-sm: 0.75rem;
+  --space-md: 1rem;
+  --space-lg: 1.25rem;
+  --space-xl: 1.875rem;
+  --space-xxl: 2.5rem;
+
+  --shadow-sm: none;
+  --shadow-md: none;
+  --shadow-lg: none;
+
+  --safe-top: env(safe-area-inset-top, 0px);
+  --safe-bottom: env(safe-area-inset-bottom, 0px);
+}

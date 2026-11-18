@@ -1,0 +1,76 @@
+/* ===== Theme-aware gradient utilities ===== */
+
+/* Gradient classes using CSS variables */
+.gradient-violet { background: var(--dim-ei); }
+.gradient-magenta { background: var(--dim-sn); }
+.gradient-orange { background: var(--dim-tf); }
+.gradient-coral { background: var(--dim-jp); }
+
+/* Mixed gradients for E-types */
+.gradient-violet-magenta { background: linear-gradient(135deg, var(--gradient-violet), var(--gradient-magenta)); }
+.gradient-magenta-coral { background: linear-gradient(135deg, var(--gradient-magenta), var(--gradient-coral)); }
+.gradient-orange-coral { background: linear-gradient(135deg, var(--gradient-orange), var(--gradient-coral)); }
+.gradient-coral-orange { background: linear-gradient(135deg, var(--gradient-coral), var(--gradient-orange)); }
+
+/* ===== Dimension Bar Colors ===== */
+.dim-bar-ei { background: var(--dim-ei); }
+.dim-bar-sn { background: var(--dim-sn); }
+.dim-bar-tf { background: var(--dim-tf); }
+.dim-bar-jp { background: var(--dim-jp); }
+
+/* ===== Accent Text ===== */
+.text-accent-blue { color: var(--accent-blue); }
+.text-accent-violet { color: var(--gradient-violet); }
+.text-accent-magenta { color: var(--gradient-magenta); }
+.text-accent-orange { color: var(--gradient-orange); }
+.text-accent-coral { color: var(--gradient-coral); }
+
+/* ===== Glass Effect (Apple theme only) ===== */
+[data-theme="apple"] .glass {
+  background: rgba(255, 255, 255, 0.72);
+  backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(20px);
+  border: 1px solid rgba(255, 255, 255, 0.5);
+}
+
+[data-theme="framer"] .glass {
+  background: rgba(20, 20, 20, 0.72);
+  backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(20px);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+/* ===== Animated Gradient Background ===== */
+@keyframes gradientFloat {
+  0%, 100% { transform: translate(0, 0) scale(1); }
+  33% { transform: translate(10px, -10px) scale(1.02); }
+  66% { transform: translate(-5px, 5px) scale(0.98); }
+}
+
+[data-theme="apple"] .bg-ambient {
+  position: absolute;
+  width: 150%;
+  height: 150%;
+  top: -25%;
+  left: -25%;
+  background: radial-gradient(ellipse at 30% 20%, rgba(124,108,240,0.06) 0%, transparent 50%),
+              radial-gradient(ellipse at 70% 60%, rgba(52,199,89,0.05) 0%, transparent 50%),
+              radial-gradient(ellipse at 50% 80%, rgba(0,113,227,0.04) 0%, transparent 50%);
+  pointer-events: none;
+  animation: gradientFloat 20s ease-in-out infinite;
+  z-index: 0;
+}
+
+[data-theme="framer"] .bg-ambient {
+  position: absolute;
+  width: 150%;
+  height: 150%;
+  top: -25%;
+  left: -25%;
+  background: radial-gradient(ellipse at 30% 20%, rgba(106,76,245,0.08) 0%, transparent 50%),
+              radial-gradient(ellipse at 70% 60%, rgba(212,77,240,0.06) 0%, transparent 50%),
+              radial-gradient(ellipse at 50% 80%, rgba(255,122,61,0.05) 0%, transparent 50%);
+  pointer-events: none;
+  animation: gradientFloat 20s ease-in-out infinite;
+  z-index: 0;
+}
